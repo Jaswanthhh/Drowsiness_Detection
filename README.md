@@ -125,7 +125,7 @@ python TRAIN.py
 |------|------|
 | shape_predictor_68_face_landmarks.dat | [Download from Dlib](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) |
 | eye_state_model.h5 | [Google Drive](https://drive.google.com/your-link-here) |
-| Data-Set | [Download from kaggle] (https://www.kaggle.com/datasets/serenaraju/yawn-eye-dataset-new?resource=download) |
+| Data-Set | [Download from kaggle](https://www.kaggle.com/datasets/serenaraju/yawn-eye-dataset-new?resource=download). |
 
 ---
 
