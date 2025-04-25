@@ -155,7 +155,5 @@ pip install -r requirements.txt
 - [MobileNetV2](https://arxiv.org/abs/1801.04381)
 
 ---
-
-## 🛡️ License
-
-This project is licensed under the MIT License.
+## Contact for Doubts
+- Mail Jaswanth2jaswanth@gmail.com
