@@ -45,8 +45,13 @@ This project implements a real-time driver drowsiness detection system using a *
 ├── eye_dataset/                   # Dataset folder for training eye classifier
 │   ├── open/
 │   └── closed/
+|   |__ yawn/
+|   |__ no_yawn/  
 ├── eye_state_model.h5            # Trained eye state classifier (MobileNetV2)
-├── driver8.py                    # Main detection + GUI integration script
+|-- eye_mouth_state_model.h5      # Trained eye,mouth state classifier (MobileNetV2)        
+├── Detector3(ML_TRAINED_YAWN&EYES).py # Main detection + GUI integration script
+|-- Detector1(NO_ML).py
+|-- Detector2(ML_TRAINED_EYES).py
 ├── TRAIN.py                      # Transfer learning script (for CNN training)
 ├── alarm.wav                     # Alarm sound for drowsy alerts
 ├── shape_predictor_68...dat      # Dlib facial landmark model
@@ -81,7 +86,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run the Detection GUI
 
 ```bash
-python driver8.py
+python .py(Name of the file you want to run)
 ```
 
 ---
@@ -94,6 +99,8 @@ If you'd like to retrain the CNN:
    ```
    eye_dataset/open/
    eye_dataset/closed/
+   eye_dataset/no_yawn
+   eye_dataset/yawn
    ```
 
 2. Run:
@@ -103,6 +110,10 @@ python TRAIN.py
 ```
 
 > This creates: `eye_state_model.h5`
+```bash
+python TRAIN_DUAL.py
+```
+> This creates: `eye_mouth_state_model.h5`
 
 ---
 
